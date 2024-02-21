@@ -1,36 +1,19 @@
-// Loops
-// For loop
-for (let i = 0; i < 10; i++) {
-    console.log(i);
+// Functions
+
+function greet(name) {
+    console.log('Good afternoom, ' + name + '!');
 }
 
-// While loop
-let i = 0;
-while (i < 10) {
-    console.log(i);
-    i++;
+greet('Jessé');
+
+function add(a, b) {
+    return a + b;
 }
 
-// Do while loop
-i = 0;
-do {
-    console.log(i);
-    i++;
-} while (i === 0)
+const arrowSum = (a, b) => a + b;
+const addFive = num => num + 5;
 
-// For of 
-let arr = [1, 2, 3, 4];
+let result = arrowSum(5, 7);
+console.log(result);
 
-for (let number of arr) {
-    console.log(number);
-}
-
-// For in
-let person = {
-    name: 'John',
-    age: 30
-}
-
-for (let key in person) {
-    console.log(key, person[key]);
-}
+console.log(addFive(result));
