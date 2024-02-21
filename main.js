@@ -1,7 +1,25 @@
-//Equality
+//Conditional Statements
+const num = Number(0);
 
-const var1 = true;
-const var2 = 1;
+console.log(num);
 
-console.log(var1 == var2); //true
-console.log(var1 === var2); //false
+if (!num) {
+  console.log("The number is 0");
+} else if (num < 0) {
+  console.log("The number is negative");
+} else {
+  console.log("The number is positive");
+}
+
+const color = "white";
+switch (color) {
+  case "green":
+    console.log("Color is green");
+    break;
+  case "red":
+    console.log("Color is red");
+    break;
+  default:
+    console.log("Color is not red or green");
+    break;
+}
