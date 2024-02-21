@@ -1,29 +1,42 @@
-//Data Types
-const name = "Jessé";
-const language = "JavaScript";
-const chanel = `Codevolution`;
+//Operators
+let x = 10;
+let y = 3;
 
-const total = 0;
-const PI = 3.14;
+console.log(x + y);
+console.log(x - y);
+console.log(x * y);
+console.log(x / y);
+console.log(x % y);
+console.log(x ** y);
 
-const isPrimaryNumber = false;
-const result = undefined;
-const data = null;
+console.log(x++); //increment
+console.log(x--); //decrement
+console.log(++x); //increment
+console.log(--x); //decrement
 
-const person = {
-  name: "Jessé",
-  lastName: "Jorge Santana",
-  age: 22,
-};
+//Comparison operators
+console.log(x == y); //false
+console.log(x === y); //false
+console.log(x != y); //true
+console.log(x !== y); //true
+console.log(x > y); //true
+console.log(x < y); //false
+console.log(x >= y); //true
+console.log(x <= y); //false
 
-console.log(person.name);
+//Logical operators
+const isValidNumber = x > 80 || -80 > y;
+console.log(isValidNumber);
 
-let oddNumbers = [1, 3, 5, 7];
+const isValid = false;
+console.log(!isValid);
 
-console.log(oddNumbers[3]);
+//Concatenation
+const name = "John";
+const surname = "Doe";
+console.log(name + " " + surname);
 
-let a = 10;
-a = 'Teste';
-a = false;
-
-console.log(a);
+//Ternary operator
+const age = 8;
+const message = age >= 18 ? "You can drive" : "You can't drive";
+console.log(message);
