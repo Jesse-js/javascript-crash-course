@@ -1,19 +1,24 @@
-// Functions
+//Scope
 
-function greet(name) {
-    console.log('Good afternoom, ' + name + '!');
+//1. Global Scope
+const myNum = 100;
+
+const showNumber = () => console.log(myNum);
+showNumber();
+
+//2. Function Scope
+let x = 10;
+const showName = (name) => {
+    let x = 1;
+    console.log(name + ' ' + x);
 }
-
-greet('Jessé');
-
-function add(a, b) {
-    return a + b;
+showName('John');
+console.log(x); // displays an error
+//3. Block Scope
+if (true) {
+    let x = 1;
+    console.log(x); // does not display an error
 }
+//console.log(x); // displays an error
 
-const arrowSum = (a, b) => a + b;
-const addFive = num => num + 5;
-
-let result = arrowSum(5, 7);
-console.log(result);
-
-console.log(addFive(result));
+//4. Module Scope
